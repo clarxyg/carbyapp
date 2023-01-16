@@ -4,7 +4,6 @@ export const Container = styled.div`
   background: #fff;
   border-radius: 40px;
   box-shadow: 0px 10px 40px 0px #1D161712;
-
 `
 
 export const SearchContainer = styled.div`
@@ -17,5 +16,5 @@ export const SearchContainer = styled.div`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin-top: -20px;
+  margin-top: -25px;
 `

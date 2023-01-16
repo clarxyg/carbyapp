@@ -10,22 +10,39 @@ const GlobalStyles = css`
       background-color: #f1f2f3;
       font-family: 'Poppins', sans-serif;
     }
+
+    .apexcharts-text tspan {
+      display: none;
+    }
+    .apexcharts-toolbar {
+      display: none !important;
+    }
+
+    .apexcharts-tooltip {
+      background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%) !important;
+      color: #fff;
+  }
+
 `
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: scroll;
 `
 const Mobile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  overflow: scroll;
+
   background: #fff;
   width: fit-content;
   border-radius: 40px;
   box-shadow: 0px 10px 40px 0px #1D161712;
-
+  overflow: scroll;
+  min-height: 500px;
 `
 
 function App() {
