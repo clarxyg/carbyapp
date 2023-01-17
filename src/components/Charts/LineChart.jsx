@@ -26,7 +26,8 @@ const Container = styled.div`
     flex-direction: column;
 
     h1 {
-      font-size: 0.9rem;
+      font-size: 1rem;
+      margin-left: 1rem;
     }
 
 

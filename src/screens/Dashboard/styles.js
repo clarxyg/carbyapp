@@ -54,7 +54,7 @@ export const Container = styled.div`
       position: absolute;
       display: flex;
       flex-direction: column;
-      width: 200px;
+      margin-right: 100px;
       opacity: 100%;
       filter: brightness(1.0);
       z-index: 999999;
@@ -63,12 +63,12 @@ export const Container = styled.div`
       p {
       color: #fff;
       font-weight: 500;
-      font-size: 0.8rem;
+      font-size: 0.92rem;
       margin-bottom: 5px;
     }
     span {
       color: #fff;
-      font-size: 0.65rem;
+      font-size: 0.7rem;
     }
 
     button {
