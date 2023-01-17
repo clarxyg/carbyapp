@@ -22,7 +22,17 @@ const GlobalStyles = css`
       background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%) !important;
       color: #fff;
   }
+  .css-v6mo1y-MuiTimelineDot-root {
+    background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%) !important;
+    box-shadow: unset !important;
+  }
 
+  .css-ha3bif-MuiTimelineItem-root {
+    min-height: unset !important;
+  }
+  .apexcharts-legend.apx-legend-position-bottom .apexcharts-legend-series, .apexcharts-legend.apx-legend-position-top .apexcharts-legend-series {
+    display: none !important;
+  }
 `
 const Container = styled.div`
   display: flex;

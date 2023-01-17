@@ -1,11 +1,16 @@
 
 import { Bell } from "phosphor-react";
 import BottomTabs from "../../components/BottomTabs";
-import { Box, Button, CardUpdateWeight, Container, ContainerChart, Filter, Header } from "./styles";
+import { Box, Button, CardUpdateWeight, Container, ContainerCard, ContainerCardStatus, ContainerChart, ContainerSplitAreaChart, Filter, Header } from "./styles";
 import cardhealth from '../../assets/cardhealth.png'
 import { Button as ButtonView } from "../../components/Button";
 import { LineChart } from "../../components/Charts/LineChart";
 import { CaloriesTimeline } from "../../components/CaloriesTimeLine";
+import watergraph from '../../assets/water.svg'
+import CircularStatic from "../../components/Charts/RadialChart";
+import { SplineArea } from "../../components/Charts/SplineAreaChart";
+import { DropButton } from "../../components/DropButton";
+import { WorkoutCard } from "../../components/WorkoutCard";
 
 
 
@@ -22,13 +27,7 @@ export function Dashboard() {
         </Button>
       </Header>
       <div>
-        <div style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-          paddingBottom: '50px'
-        }}>
+        <ContainerCard>
           <div className="containerCard">
             <Filter />
             <img src={cardhealth} />
@@ -38,8 +37,8 @@ export function Dashboard() {
             <span>Diabetes, colesterol e perda de peso</span>
             <ButtonView>Ver mais</ButtonView>
           </div>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: 0 }}>
+        </ContainerCard>
+        <Container>
           <CardUpdateWeight>
             <p>Atualizar peso</p>
             <div>
@@ -49,22 +48,36 @@ export function Dashboard() {
           <ContainerChart>
             <LineChart />
           </ContainerChart>
-        </div>
+        </Container>
         <Box>
-          <div>
-            <CaloriesTimeline />
-          </div>
-          <div>
+          <CaloriesTimeline />
+          <div className="column">
             <div>
-              aaaa
+              <ContainerCardStatus>
+                <p>Ingestão de água</p>
+                <span>3 copos diários</span>
+                <img src={watergraph} />
+              </ContainerCardStatus>
             </div>
             <div>
-              aaaa
+              <ContainerCardStatus>
+                <p>Meta de atividade</p>
+                <span>1.000 passos</span>
+                <CircularStatic />
+              </ContainerCardStatus>
             </div>
           </div>
         </Box>
+        <ContainerSplitAreaChart>
+          <div className="dropcontainer">
+            <p>Evolução de saúde</p>
+            <DropButton />
+          </div>
+          <SplineArea />
+        </ContainerSplitAreaChart>
+        <WorkoutCard />
       </div>
-      <BottomTabs />
+      {/* <BottomTabs /> */}
     </Container>
   )
 }

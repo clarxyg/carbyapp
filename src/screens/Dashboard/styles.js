@@ -21,10 +21,21 @@ export const Header = styled.header`
   }
 `
 
+export const ContainerCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 25px;
+`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: scroll;
+  position: relative;
+  width: 450px;
 
   .containerCard {
     display: flex;
@@ -33,7 +44,7 @@ export const Container = styled.div`
     background-blend-mode: difference;
 
     img {
-      width: 80%;
+      width: 350px;
       box-shadow: 0px 10px 22px 0px #95ADFE4D;
       border-radius: 30px;
     }
@@ -79,8 +90,8 @@ export const Button = styled.button`
 
 export const Filter = styled.div`
   background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
-  width: 252px;
-  height: 117px;
+  width: 78%;
+  height: 162px;
   position: absolute;
   z-index: 9999;
   border-radius: 25px;
@@ -92,27 +103,76 @@ export const CardUpdateWeight = styled.div`
   background: #f0f8ff;
   border-radius: 16px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 65%;
+  margin-bottom: 20px;
+  padding: 5px 25px 5px 25px;
 
   p {
     color: #000;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   button {
     background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+    width: 65px;
   }
 `
 
 export const ContainerChart = styled.div`
-  width: 250px;
+  width: 345px;
 `
 
 export const Box = styled.div`
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+`
+
+
+export const ContainerCardStatus = styled.div`
+  box-shadow: 0px 10px 40px 0px #1D161712;
+  background: #fff;
+  padding: 23px;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+
+  p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  span {
+    color: #92A3FD;
+  }
+`
+
+export const ContainerSplitAreaChart = styled.div`
+   display: flex;
+   flex-direction: column;
+
+
+   .dropcontainer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+
+      p {
+        font-weight: 500;
+      }
+   }
 `
