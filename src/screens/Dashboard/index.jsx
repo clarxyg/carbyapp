@@ -77,7 +77,7 @@ export function Dashboard() {
         </ContainerSplitAreaChart>
         <WorkoutCard />
       </div>
-      {/* <BottomTabs /> */}
+      <BottomTabs />
     </Container>
   )
 }

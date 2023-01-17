@@ -2,8 +2,14 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   background: #fff;
-  border-radius: 40px;
+  /* border-radius: 40px; */
   box-shadow: 0px 10px 40px 0px #1D161712;
+  width: 31%;
+  padding-top: 16px;
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0; */
+  position: fixed;
+  bottom: 0;
 `
 
 export const SearchContainer = styled.div`
@@ -16,5 +22,5 @@ export const SearchContainer = styled.div`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin-top: -25px;
+  margin-top: -35px;
 `

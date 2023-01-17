@@ -1,7 +1,5 @@
 import styled from "@emotion/styled"
-import BottomTabs from "./components/BottomTabs"
 import { Global, css } from "@emotion/react";
-import { Dashboard } from "./screens/Dashboard";
 import { BrowserRouter } from "react-router-dom";
 import { Navigation } from "./routes/routes";
 
