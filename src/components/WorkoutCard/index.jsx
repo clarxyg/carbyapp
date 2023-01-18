@@ -3,6 +3,7 @@ import workout3 from '../../assets/workout3.svg'
 import workout2 from '../../assets/workout2.svg'
 import workout1 from '../../assets/workout1.svg'
 import { CaretCircleRight } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 
 const workoutData = [
@@ -31,7 +32,7 @@ export function WorkoutCard() {
     <>
       <Header>
         <p>Últimos Treinos</p>
-        <p className="see">Ver mais</p>
+        <Link className="see" to="/workouttracker">Ver mais</Link>
       </Header>
       {
         workoutData.map((item) =>
