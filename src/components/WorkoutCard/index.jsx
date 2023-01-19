@@ -43,7 +43,7 @@ export function WorkoutCard() {
                 <span>{item.name}</span>
                 <div className="descriptioncontainer">
                   <span className="description">{item.description}</span>
-                  <CaretCircleRight size={32} color="#C58BF2" />
+                  <CaretCircleRight size={36} color="#C58BF2" />
                 </div>
                 <div className="bar">
                   <span className="progress"></span>

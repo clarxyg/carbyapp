@@ -18,6 +18,10 @@ export const Header = styled.header`
       font-weight: 400;
       font-size: 0.6rem;
     }
+
+    @media (max-width: 400px) {
+      margin-right: 80px;
+    }
   }
 `
 
@@ -36,6 +40,10 @@ export const Container = styled.div`
   position: relative;
   width: 450px;
 
+  @media (max-width: 400px) {
+    width: unset;
+  }
+
   .containerCard {
     display: flex;
     justify-content: center;
@@ -43,9 +51,13 @@ export const Container = styled.div`
     background-blend-mode: difference;
 
     img {
-      width: 350px;
+      width: 360px;
       box-shadow: 0px 10px 22px 0px #95ADFE4D;
       border-radius: 30px;
+
+      @media (max-width: 400px) {
+        width: 100%;
+      }
     }
   }
 
@@ -59,6 +71,10 @@ export const Container = styled.div`
       filter: brightness(1.0);
       z-index: 999999;
       margin-top: 15px;
+
+      @media (max-width: 400px) {
+        margin-right: 70px;
+      }
 
       p {
       color: #fff;
@@ -89,13 +105,18 @@ export const Button = styled.button`
 
 export const Filter = styled.div`
   background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
-  width: 78%;
-  height: 162px;
+  width: 80%;
+  height: 167px;
   position: absolute;
   z-index: 9999;
-  border-radius: 25px;
+  border-radius: 30px;
   box-shadow: 0px 10px 22px 0px #95ADFE4D;
   opacity: 0.8;
+
+  @media (max-width: 400px) {
+    width: 95%;
+    height: 147px;
+  }
 `
 
 export const CardUpdateWeight = styled.div`
@@ -104,9 +125,13 @@ export const CardUpdateWeight = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 65%;
+  width: 70%;
   margin-bottom: 20px;
   padding: 5px 25px 5px 25px;
+
+  @media (max-width: 400px) {
+    width: 80%;
+  }
 
   p {
     color: #000;
@@ -121,13 +146,17 @@ export const CardUpdateWeight = styled.div`
 `
 
 export const ContainerChart = styled.div`
-  width: 345px;
+  width: 370px;
+
+  @media (max-width: 400px) {
+    width: 320px;
+  }
 `
 
 export const Box = styled.div`
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.8rem;
   margin-top: 20px;
 
 
@@ -135,6 +164,7 @@ export const Box = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    justify-content: center;
   }
 `
 
@@ -144,6 +174,10 @@ export const ContainerCardStatus = styled.div`
   background: #fff;
   padding: 23px;
   justify-content: center;
+
+  @media (max-width: 400px) {
+    padding: 15px;
+  }
 
   display: flex;
   flex-direction: column;

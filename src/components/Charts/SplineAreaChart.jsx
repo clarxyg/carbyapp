@@ -6,8 +6,23 @@ const Container = styled.div`
   display: flex;
   margin-left: 20px;
 
+  @media (max-width: 400px) {
+    margin-left: unset;
+  }
+
   .apexcharts-text tspan {
       display: block;
+    }
+
+
+    .chart {
+      height: 350px;
+      width: 400px;
+
+      @media (max-width: 400px) {
+        width: 330px;
+        height: unset;
+      }
     }
 
 `
@@ -59,7 +74,7 @@ export function SplineArea() {
 
 
     <Container id="chart">
-      <ReactApexChart options={data.options} series={data.series} type="area" height={350} width={380}/>
+      <ReactApexChart options={data.options} series={data.series} type="area" className="chart"/>
     </Container>
 
 

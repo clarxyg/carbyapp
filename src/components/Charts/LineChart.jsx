@@ -7,7 +7,12 @@ const ContainerChart = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 200px;
+    height: 215px;
+
+
+    @media (max-width: 400px) {
+      height: 185px;
+    }
 
     .health {
       display: flex;

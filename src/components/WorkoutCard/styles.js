@@ -28,9 +28,12 @@ export const Container = styled.div`
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
     padding: 10px;
     width: 80%;
+
+    @media (max-width: 400px) {
+      width: 90%;
+    }
     span {
       color: #DDDADA;
       font-weight: 300;
@@ -63,6 +66,10 @@ export const Container = styled.div`
     width: 220px;
     margin: 0;
 
+    @media (max-width: 400px) {
+      width: 180px;
+    }
+
     .progress {
       background: linear-gradient(180deg, #C58BF2 -83.11%, #B4C0FE 60.6%);
       position: absolute;
@@ -79,5 +86,9 @@ export const Container = styled.div`
     width: 100%;
     box-shadow: none;
     margin: 0;
+
+    svg {
+      cursor: pointer;
+    }
   }
 `

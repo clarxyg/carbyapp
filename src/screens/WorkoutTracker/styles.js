@@ -7,6 +7,9 @@ export const Container = styled.div`
    flex-direction: column;
    align-items: center;
 
+   @media (max-width: 400px) {
+    width: unset;
+   }
    video {
     cursor: pointer;
    }

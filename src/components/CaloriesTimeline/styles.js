@@ -24,6 +24,10 @@ export const Card = styled.div`
     position: relative;
     width: 15px;
 
+    @media (max-width: 400px) {
+      width: 5px;
+    }
+
     .progress {
       background: linear-gradient(180deg, #C58BF2 -83.11%, #B4C0FE 60.6%);
       position: absolute;
@@ -32,6 +36,10 @@ export const Card = styled.div`
       left: 0;
       bottom: 0;
       border-radius: 30px;
+
+      @media (max-width: 400px) {
+      width: 15px;
+    }
     }
 }
 
@@ -60,16 +68,28 @@ export const Card = styled.div`
     margin-left: -50px;
     height: 250px !important;
 
+    @media (max-width: 400px) {
+      width: 140px !important;
+    }
+
     .separator {
       display: flex;
     }
 
     .outhers {
       margin-left: -27px;
+
+      @media (max-width: 400px) {
+        margin-left: -19px;
+      }
     }
 
     .outhers2 {
       margin-left: -20px;
+
+      @media (max-width: 400px) {
+        margin-left: -13px;
+      }
     }
 
 
@@ -86,6 +106,10 @@ export const Card = styled.div`
     font-size: 0.8rem;
     width: 100%;
     margin-top: -10px;
+
+    @media (max-width: 400px) {
+      padding-top: 0;
+    }
   }
 
   .quantity {

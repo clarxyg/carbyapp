@@ -6,6 +6,7 @@ import thumbnail from '../../assets/thumbnail.png'
 
 const videoData = [
   {
+    id: 1,
     video: movie,
     thumbnail: thumbnail
   }
@@ -19,7 +20,7 @@ export function WorkoutTracker() {
       </Header>
       {
         videoData.map((item) =>
-          <video width="320" height="240" controls poster={item.thumbnail}>
+          <video width="320" height="240" controls poster={item.thumbnail} key={item.id}>
             <source src={item.video} type="video/mp4" />
           </video>
         )

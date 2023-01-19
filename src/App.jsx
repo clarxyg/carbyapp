@@ -31,6 +31,10 @@ const GlobalStyles = css`
   .apexcharts-legend.apx-legend-position-bottom .apexcharts-legend-series, .apexcharts-legend.apx-legend-position-top .apexcharts-legend-series {
     display: none !important;
   }
+
+  a {
+    text-decoration: none;
+  }
 `
 const Container = styled.div`
   display: flex;
@@ -48,6 +52,8 @@ const Mobile = styled.div`
   background: #fff;
   width: fit-content;
   border-radius: 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   box-shadow: 0px 10px 40px 0px #1D161712;
   overflow: scroll;
   min-height: 500px;
