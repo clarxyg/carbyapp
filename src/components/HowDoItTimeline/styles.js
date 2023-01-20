@@ -16,7 +16,7 @@ export const Container = styled.div`
     font-size: 0.85rem;
     line-height: 18px;
     color: #7B6F72;
-    width: 250px;
+    width: 230px;
   }
 
   .title {
@@ -27,12 +27,13 @@ export const Container = styled.div`
   }
 
   .timeline {
-    margin-left: -65px;
+    margin-left: -75px;
     width: 100%;
   }
 
-  .separator {
-
+  .step {
+    color: #EEA4CE;
+    margin-top: -5px;
   }
 `
 

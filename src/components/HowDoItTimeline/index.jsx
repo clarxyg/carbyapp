@@ -12,8 +12,8 @@ export function HowDoItTimeline() {
       </Header>
       <Timeline position="alternate" className="timeline">
         <TimelineItem>
-          <TimelineOppositeContent>
-            1
+          <TimelineOppositeContent className="step">
+            01
           </TimelineOppositeContent>
           <TimelineSeparator className="separator">
             <RadioButton size={25} weight="fill" color="#C58BF2" />
@@ -41,14 +41,13 @@ export function HowDoItTimeline() {
             <RadioButton size={25} weight="fill" color="#C58BF2" />
             <TimelineConnector className="connector" />
           </TimelineSeparator>
-          <TimelineContent>
-
-              2
+          <TimelineContent className="step">
+              02
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent>
-            3
+          <TimelineOppositeContent className="step">
+            03
           </TimelineOppositeContent>
           <TimelineSeparator className="separator">
             <RadioButton size={25} weight="fill" color="#C58BF2" />
@@ -70,8 +69,8 @@ export function HowDoItTimeline() {
             <RadioButton size={25} weight="fill" color="#C58BF2" />
             <TimelineConnector className="connector" />
           </TimelineSeparator>
-          <TimelineContent>
-              4
+          <TimelineContent className="step">
+              04
           </TimelineContent>
         </TimelineItem>
       </Timeline>
