@@ -6,12 +6,14 @@ export const Container = styled.div`
   justify-content: space-around;
   width: 100%;
 
-  button {
+  button, .menu {
     background: #F7F8F8;
     border: none;
     border-radius: 8px;
-    padding: 8px;
+    padding: 2px 9px 2px 9px;
     cursor: pointer;
+    min-width: unset !important;
+    color: #000;
 
     font-size: 1.3rem;
 
@@ -21,4 +23,5 @@ export const Container = styled.div`
       align-items: center;
     }
   }
+
 `
