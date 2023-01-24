@@ -55,7 +55,7 @@ export function TopBar() {
   return (
     <Container>
       <button>
-        <Link to="/">
+        <Link to="/dashboard">
           <X size={15} />
         </Link>
       </button>

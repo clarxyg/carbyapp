@@ -9,6 +9,17 @@ const GlobalStyles = css`
       font-family: 'Poppins', sans-serif;
     }
 
+    .css-q0jhri-MuiInputBase-root-MuiInput-root:after {
+      display: none;
+    }
+
+    .MuiOutlinedInput-notchedOutline  {
+    border: none !important;
+  }
+
+    .css-q0jhri-MuiInputBase-root-MuiInput-root:before {
+      display: none !important;
+    }
     .apexcharts-text tspan {
       display: none;
     }

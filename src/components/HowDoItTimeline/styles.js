@@ -31,6 +31,17 @@ export const Container = styled.div`
     width: 100%;
   }
 
+  @media (max-width: 400px) {
+
+    .timeline {
+      margin-left: -50px;
+    }
+
+    .description {
+      width: 150px;
+    }
+  }
+
   .step {
     color: #EEA4CE;
     margin-top: -5px;

@@ -9,17 +9,54 @@ export const Container = styled.div`
 
    @media (max-width: 400px) {
     width: unset;
+
+    video {
+      width: 80%;
+      height: 100%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
    }
    video {
     cursor: pointer;
+   }
+
+
+   .containerButton {
+    button {
+    padding: 18px 129px;
+    width: 315px;
+    height: 60px;
+    background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+    box-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
+    border-radius: 99px;
+
+    font-size: 1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+   }
+   }
+
+   @media (max-width: 400px) {
+
+    .containerButton {
+      button {
+        width: 250px;
+        padding: unset;
+      }
+    }
    }
 `
 
 
 export const Header = styled.div`
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+
+
+  width: 310px;
+  margin-top: 2rem;
+
+
 `
 
 export const Box = styled.div`
@@ -45,6 +82,12 @@ export const Box = styled.div`
       color: #7B6F72;
       font-weight: 400;
       font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .text {
+      width: 250px;
     }
   }
 `

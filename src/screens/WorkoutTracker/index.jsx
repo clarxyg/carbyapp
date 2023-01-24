@@ -3,6 +3,8 @@ import movie from '../../assets/exercise.mp4'
 import thumbnail from '../../assets/thumbnail.png'
 import { TopBar } from "../../components/TopBar";
 import { HowDoItTimeline } from "../../components/HowDoItTimeline";
+import { Button } from "../../components/Button"
+import { Repetitions } from "../../components/Repetitions";
 
 
 const videoData = [
@@ -42,6 +44,12 @@ export function WorkoutTracker() {
         </div>
       </Box>
       <HowDoItTimeline />
+      <Repetitions />
+      <div className="containerButton">
+        <Button>
+          Salvar
+        </Button>
+      </div>
     </Container>
   )
 }

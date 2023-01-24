@@ -26,7 +26,7 @@ export default function BottomTabs() {
       >
         <BottomNavigationAction
           icon={
-            <Link to="/">
+            <Link to="/dashboard">
               <House size={32} weight={value === 'house' ? 'fill' : 'regular'} color={value === 'house' ? '#C58BF2' : '#ADA4A5'}/>
             </Link>
           }

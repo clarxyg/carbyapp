@@ -8,7 +8,8 @@ import { WorkoutTracker } from "../screens/WorkoutTracker";
 export const Navigation = () => {
   return(
     <Routes>
-      <Route path="/" element={<Dashboard />}/>
+      <Route path="/" element={<CompleteProfile />}/>
+      <Route path="/dashboard" element={<Dashboard />}/>
       <Route path="/completeprofile" element={<CompleteProfile />}/>
       <Route path="/workouttracker" element={<WorkoutTracker />}/>
     </Routes>

@@ -3,8 +3,13 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+
+  @media (max-width: 400px) {
+    justify-content: center;
+    gap: 12rem;
+  }
 
   button, .menu {
     background: #F7F8F8;
