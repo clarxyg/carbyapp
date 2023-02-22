@@ -27,20 +27,22 @@ export default function BottomTabs() {
         <BottomNavigationAction
           icon={
             <Link to="/dashboard">
-              <House size={32} weight={value === 'house' ? 'fill' : 'regular'} color={value === 'house' ? '#C58BF2' : '#ADA4A5'}/>
+              <House size={32} weight={value === 'house' ? 'fill' : 'regular'} color={value === 'house' ? '#C58BF2' : '#ADA4A5'} />
             </Link>
           }
           value="house" />
-        <BottomNavigationAction icon={<Activity size={32} value="activity" color={value === 'activity' ? '#C58BF2' : '#ADA4A5'}/>} />
+        <BottomNavigationAction icon={<Activity size={32} value="activity" color={value === 'activity' ? '#C58BF2' : '#ADA4A5'} />} />
         <SearchContainer>
-          <BottomNavigationAction icon={<MagnifyingGlass size={32} color="#ffff" weight={value === 'search' ? 'fill' : 'regular'} />} value="search" />
+          <Link to="/menu">
+            <BottomNavigationAction icon={<MagnifyingGlass size={32} color="#ffff" weight={value === 'search' ? 'fill' : 'regular'} />} value="search" />
+          </Link>
         </SearchContainer>
         <BottomNavigationAction
-        icon={<Clock size={32} weight={value === 'clock' ? 'fill' : 'regular'} />} value="clock" color={value === 'clock' ? '#C58BF2' : '#ADA4A5'}/>
+          icon={<Clock size={32} weight={value === 'clock' ? 'fill' : 'regular'} />} value="clock" color={value === 'clock' ? '#C58BF2' : '#ADA4A5'} />
         <BottomNavigationAction
           icon={
             <Link to="/completeprofile">
-              <User size={32} weight={value === 'user' ? 'fill' : 'regular'} color={value === 'user' ? '#C58BF2' : '#ADA4A5'}/>
+              <User size={32} weight={value === 'user' ? 'fill' : 'regular'} color={value === 'user' ? '#C58BF2' : '#ADA4A5'} />
             </Link>
           }
           value="user" />
