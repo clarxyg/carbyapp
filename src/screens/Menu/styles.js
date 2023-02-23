@@ -60,6 +60,12 @@ export const Header = styled.header`
     align-items: center;
     gap: 0.5rem;
 
+    a {
+      display: flex;
+      align-items: center;
+      color: #000;
+    }
+
     h1 {
       font-size: 1.2rem;
       font-weight: 300;
@@ -75,7 +81,6 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 0.9rem;
   }
 `

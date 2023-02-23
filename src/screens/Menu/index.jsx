@@ -2,6 +2,7 @@ import { FormControl, InputAdornment, OutlinedInput } from "@mui/material";
 import { GitMerge, Heart, List, MagnifyingGlass, Plus } from "phosphor-react";
 import { Button, Container, Header, Card } from "./styles";
 import pizza from '../../assets/pizza.png'
+import { Link } from "react-router-dom";
 
 
 export function Menu() {
@@ -13,7 +14,9 @@ export function Menu() {
             <h1>Almoço</h1>
             <span>12:00</span>
           </div>
-          <List size={20} />
+          <Link to="/drawer">
+            <List size={20} />
+          </Link>
         </div>
         <FormControl variant="outlined" className="form">
           <OutlinedInput
