@@ -23,6 +23,10 @@ export const Container = styled.div`
     place-items: center;
     place-content: center;
     gap: 1rem;
+
+    a {
+      color: #000;
+    }
   }
 
 `

@@ -46,42 +46,50 @@ export function Menu() {
         </Button>
       </div>
       <div className="grid">
-        <Card>
-          <div className="imageCard">
-            <img src={pizza} alt="pizza" />
-          </div>
-          <div className="description">
-            <h1>Pizza do Zé</h1>
-            <p>380 kcal</p>
-          </div>
-        </Card>
-        <Card>
-          <div className="imageCard">
-            <img src={pizza} alt="pizza" />
-          </div>
-          <div className="description">
-            <h1>Pizza do Zé</h1>
-            <p>380 kcal</p>
-          </div>
-        </Card>
-        <Card>
-          <div className="imageCard">
-            <img src={pizza} alt="pizza" />
-          </div>
-          <div className="description">
-            <h1>Pizza do Zé</h1>
-            <p>380 kcal</p>
-          </div>
-        </Card>
-        <Card>
-          <div className="imageCard">
-            <img src={pizza} alt="pizza" />
-          </div>
-          <div className="description">
-            <h1>Pizza do Zé</h1>
-            <p>380 kcal</p>
-          </div>
-        </Card>
+        <Link to="/item">
+          <Card>
+            <div className="imageCard">
+              <img src={pizza} alt="pizza" />
+            </div>
+            <div className="description">
+              <h1>Pizza do Zé</h1>
+              <p>380 kcal</p>
+            </div>
+          </Card>
+        </Link>
+        <Link to="/item">
+          <Card>
+            <div className="imageCard">
+              <img src={pizza} alt="pizza" />
+            </div>
+            <div className="description">
+              <h1>Pizza do Zé</h1>
+              <p>380 kcal</p>
+            </div>
+          </Card>
+        </Link>
+        <Link to="/item">
+          <Card>
+            <div className="imageCard">
+              <img src={pizza} alt="pizza" />
+            </div>
+            <div className="description">
+              <h1>Pizza do Zé</h1>
+              <p>380 kcal</p>
+            </div>
+          </Card>
+        </Link>
+        <Link to="/item">
+          <Card>
+            <div className="imageCard">
+              <img src={pizza} alt="pizza" />
+            </div>
+            <div className="description">
+              <h1>Pizza do Zé</h1>
+              <p>380 kcal</p>
+            </div>
+          </Card>
+        </Link>
       </div>
     </Container>
   )
