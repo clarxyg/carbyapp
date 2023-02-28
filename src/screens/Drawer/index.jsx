@@ -2,20 +2,21 @@ import { FormControl, InputAdornment, OutlinedInput } from "@mui/material";
 import { GitMerge, Heart, Lightning, MagnifyingGlass, X, Clock } from "phosphor-react";
 import { Link } from "react-router-dom";
 import { IconsList } from "../../components/IconsList";
-import { Button, Container, Divider } from "./styles";
+import { Button, Container, Divider, Filter } from "./styles";
 
 
 
 export function Drawer() {
   return (
     <Container>
+      <Filter />
       <div className="drawer">
         <div className="titleAndHour">
           <h1>Almoço</h1>
           <span>12:00</span>
         </div>
         <Link to="/menu">
-          <X size={22} color="#fff" />
+          <X size={22} color="#000" />
         </Link>
       </div>
       <div className="containerButton">
@@ -50,18 +51,19 @@ export function Drawer() {
       <div className="containerSearchItems">
         <p className="title">Buscas recentes</p>
         <p>
-          <Clock size={14} color="#f1f2f3" />
+          <Clock size={16} weight="fill" color="#B4C0FE" />
           Tilápia
         </p>
         <p>
-          <Clock size={14} color="#f1f2f3" />
+          <Clock size={16} weight="fill" color="#B4C0FE" />
           Pizza
         </p>
         <p>
-          <Clock size={14} color="#f1f2f3" />
+          <Clock size={16} weight="fill" color="#B4C0FE" />
           Churraco
         </p>
       </div>
+      {/* <div className="elipse"/> */}
     </Container>
   )
 }

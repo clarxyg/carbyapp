@@ -1,5 +1,5 @@
 import { Button, Menu, MenuItem } from "@mui/material";
-import { DotsThree, X } from "phosphor-react";
+import { ArrowArcRight, ArrowLeft, DotsThree, X } from "phosphor-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Container } from "./styles";
@@ -25,7 +25,7 @@ function MenuTab() {
         onClick={handleClick}
         className="menu"
       >
-        <DotsThree size={15} weight="bold" style={{ padding: '8px 0px 8px 0px' }}/>
+        <DotsThree size={15} weight="bold" style={{ padding: '8px 0px 8px 0px' }} />
       </Button>
       <Menu
         id="demo-positioned-menu"
@@ -51,15 +51,29 @@ function MenuTab() {
 }
 
 
-export function TopBar() {
+export function TopBar({ showMenu, goBack }) {
   return (
     <Container>
-      <button>
-        <Link to="/dashboard">
-          <X size={15} />
-        </Link>
-      </button>
-      <MenuTab />
+      {
+        goBack ?
+          <button style={{ padding: '8px', marginLeft: '-20px', marginTop: '-20px' }}>
+            <Link to="/menu">
+              <ArrowLeft size={20} />
+            </Link>
+          </button>
+          :
+          <button>
+            <Link to="/dashboard">
+              <X size={15} />
+            </Link>
+          </button>
+      }
+      {
+        showMenu ?
+          <button>
+            <MenuTab />
+          </button> : <></>
+      }
     </Container>
   )
 }

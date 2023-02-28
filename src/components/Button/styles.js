@@ -10,4 +10,9 @@ width: 95px;
 color: #fff;
 font-size: 0.65rem;
 cursor: pointer;
+
+.disabled {
+  background: transparent !important;
+  color: #000 !important;
+}
 `

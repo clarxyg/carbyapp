@@ -38,17 +38,27 @@ export const ContainerCard = styled.div`
       display: flex;
       flex-direction: column;
 
-      h1 {
-        margin-bottom: 9px;
+
+      .by {
+        color: #7B6F72;
+      }
+
+      .name {
+        color: #92A3FD;
+      }
+
+      h3 {
+        margin-bottom: 5px;
       }
 
       span {
         display: flex;
         align-items: center;
-        gap: 7px;
+        gap: 5px;
 
-        color: #ADA4A5;
+        margin: 0;
         font-weight: 300;
+        font-size: 0.8rem;
       }
 
       .row {
@@ -57,6 +67,26 @@ export const ContainerCard = styled.div`
       }
     }
 
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 0;
+
+    h3 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-top: 0;
+      font-weight: 300;
+    }
+
+    span {
+      color: #92A3FD;
+    }
   }
 `
 
@@ -207,4 +237,30 @@ export const Comments = styled.div`
     }
  }
 
+`
+
+export const CardButton = styled.div`
+  padding: 30px;
+  padding-top: 0;
+
+  .card {
+    background: #F7F8F8;
+    border-radius: 99px;
+    padding: 12px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+      border-radius: 50px;
+      color: #fff;
+      text-transform: none;
+      font-size: 1rem;
+      width: 150px;
+      padding: 15px;
+    }
+  }
 `

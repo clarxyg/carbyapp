@@ -1,4 +1,4 @@
-import * as React from 'react';
+
 import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -6,6 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { Container } from './styles';
 import Divider from '@mui/material/Divider';
 import { CaretDown } from 'phosphor-react';
+import { useState } from 'react';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -49,7 +50,7 @@ const StyledMenu = styled((props) => (
 }));
 
 export function DropButton() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);

@@ -1,9 +1,10 @@
-import * as React from 'react';
+
 import PropTypes from 'prop-types';
 import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import styled from '@emotion/styled';
+import { useState } from 'react';
 
 function CircularProgressWithLabel(props) {
   return (
@@ -51,16 +52,7 @@ const Container = styled.div`
 `
 
 export default function CircularStatic() {
-  const [progress, setProgress] = React.useState(80);
-
-  // React.useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
-  //   }, 800);
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // }, []);
+  const [progress, setProgress] = useState(80);
 
   return (
     <Container>

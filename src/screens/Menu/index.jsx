@@ -3,6 +3,7 @@ import { GitMerge, Heart, List, MagnifyingGlass, Plus } from "phosphor-react";
 import { Button, Container, Header, Card } from "./styles";
 import pizza from '../../assets/pizza.png'
 import { Link } from "react-router-dom";
+import BottomTabs from '../../components/BottomTabs'
 
 
 export function Menu() {
@@ -91,6 +92,7 @@ export function Menu() {
           </Card>
         </Link>
       </div>
+      <BottomTabs />
     </Container>
   )
 }

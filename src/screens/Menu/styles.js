@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const Container = styled.div`
     width: 450px;
-    min-height: 700px;
+    height: 100vh;
 
    .containerButton {
     display: flex;
@@ -141,3 +141,4 @@ export const Card = styled.div`
       }
   }
 `
+
