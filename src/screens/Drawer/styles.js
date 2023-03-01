@@ -32,23 +32,6 @@ export const Container = styled.div`
   }
 
 
-  .form {
-    box-shadow: 0px 10px 40px 0px #1D161712;
-    border-radius: 15px;
-    background-color: #f1f2f3;;
-    width: 200px;
-    height: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
-    z-index: 99999;
-
-    svg {
-      cursor: pointer;
-    }
-  }
-
   .containerForm {
     display: flex;
     gap: 1rem;

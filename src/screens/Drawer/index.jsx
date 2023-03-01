@@ -2,6 +2,7 @@ import { FormControl, InputAdornment, OutlinedInput } from "@mui/material";
 import { GitMerge, Heart, Lightning, MagnifyingGlass, X, Clock } from "phosphor-react";
 import { Link } from "react-router-dom";
 import { IconsList } from "../../components/IconsList";
+import { Search } from "../../components/Inputs/Search";
 import { Button, Container, Divider, Filter } from "./styles";
 
 
@@ -36,16 +37,7 @@ export function Drawer() {
       <IconsList />
       <Divider />
       <div className="containerForm">
-        <FormControl variant="outlined" className="form">
-          <OutlinedInput
-            id="outlined-adornment-weight"
-            endAdornment={<InputAdornment position="end"><MagnifyingGlass size={22} /></InputAdornment>}
-            aria-describedby="outlined-weight-helper-text"
-            inputProps={{
-              'aria-label': 'weight'
-            }}
-          />
-        </FormControl>
+        <Search />
         <p>Cancelar</p>
       </div>
       <div className="containerSearchItems">

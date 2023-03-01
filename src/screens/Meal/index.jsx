@@ -1,8 +1,9 @@
-import { Container, ContainerCard, CardButton } from './styles'
+import { Container, ContainerCard, CardButton, Workout, Filter } from './styles'
 import pizza from '../../assets/pizza.png'
 import { TopBar } from '../../components/TopBar'
 import { Button } from '../../components/Button'
-import { Switch } from '@mui/material'
+import SwitchToggle from '../../components/Switch'
+import workout from '../../assets/workout1.svg'
 
 export function Meal() {
   return (
@@ -19,7 +20,7 @@ export function Meal() {
               de <span className='name'>James Ruth</span>
             </span>
           </div>
-          <Switch />
+          <SwitchToggle />
         </div>
         <div className='description'>
           <h3>Descrição</h3>
@@ -31,14 +32,25 @@ export function Meal() {
         </div>
         <CardButton>
            <div className='card'>
-             <Button>
+             <button className='enabled'>
                Foto
-             </Button>
-             <Button disabled>
+             </button>
+             <button className='disabled'>
                Estatística
-             </Button>
+             </button>
            </div>
         </CardButton>
+        <Workout>
+          <div className='card'>
+            <Filter />
+            <p>AB Workout</p>
+            <p className='description'>14 Exercises | 20mins</p>
+            <Button>
+              Ver mais
+            </Button>
+          </div>
+          <img src={workout} alt="workout"/>
+        </Workout>
       </ContainerCard>
     </Container>
   )

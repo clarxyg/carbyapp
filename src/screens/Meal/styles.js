@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 export const Container = styled.div`
   width: 450px;
   display: flex;
+
+  height: 1000px;
   flex-direction: column;
 
   .imageContainer {
@@ -253,14 +255,87 @@ export const CardButton = styled.div`
     align-items: center;
     justify-content: center;
 
+
     button {
-      background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
       border-radius: 50px;
-      color: #fff;
       text-transform: none;
-      font-size: 1rem;
-      width: 150px;
+      font-size: 1.2rem;
+      width: 175px;
       padding: 15px;
+      border: none;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .enabled {
+      background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+      color: #fff;
+    }
+
+    .disabled {
+      background: transparent !important;
+      color: #ADA4A5;
     }
   }
+`
+
+export const Workout = styled.div`
+  padding: 30px;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    border-radius: 20px;
+
+    p {
+      color: #000;
+      position: absolute;
+      margin-left: 30px;
+      margin-top: 25px;
+    }
+
+    .description {
+      position: absolute;
+      margin-top: 55px;
+      margin-left: -1px;
+
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 18px;
+
+      color: #7B6F72;
+    }
+
+    button {
+      margin-top: 100px;
+      margin-left: 28px;
+      background-color: #FFFFFF;
+      border-radius: 50px;
+      color: #92A3FD;
+      position: absolute;
+      z-index: 99999;
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+  }
+
+  img {
+    z-index: 9999;
+    margin-top: 25px;
+    margin-right: 30px;
+    width: 120px;
+  }
+`
+export const Filter = styled.div`
+    background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
+    width: 390px;
+    height: 167px;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 30px;
+    box-shadow: 0px 10px 22px 0px #95ADFE4D;
+    opacity: 0.2;
+
+
 `
