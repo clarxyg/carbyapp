@@ -1,6 +1,7 @@
 import { FormControl, InputAdornment, OutlinedInput } from "@mui/material";
 import { GitMerge, Heart, Lightning, MagnifyingGlass, X, Clock, CaretLeft } from "phosphor-react";
 import { Link } from "react-router-dom";
+import { Historic } from "../../components/Historic";
 import { IconsList } from "../../components/IconsList";
 import { Search } from "../../components/Inputs/Search";
 import MealMenu from "../../components/MealMenu";
@@ -42,19 +43,7 @@ export function Drawer() {
       </div>
       <div className="containerSearchItems">
         <p className="title">Histórico</p>
-        {/* <p>
-          <Clock size={16} weight="fill" color="#B4C0FE" />
-          Tilápia
-        </p>
-        <p>
-          <Clock size={16} weight="fill" color="#B4C0FE" />
-          Pizza
-        </p>
-        <p>
-          <Clock size={16} weight="fill" color="#B4C0FE" />
-          Churraco
-        </p> */}
-
+        <Historic />
       </div>
       {/* <div className="elipse"/> */}
     </Container>

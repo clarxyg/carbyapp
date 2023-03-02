@@ -19,7 +19,7 @@ export function WorkoutTracker() {
   return (
     <Container>
       <Header>
-        <TopBar />
+        <TopBar goBack to="/dashboard"/>
       </Header>
       {
         videoData.map((item) =>

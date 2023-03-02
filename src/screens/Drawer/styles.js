@@ -58,9 +58,11 @@ export const Container = styled.div`
     z-index: 99999;
 
     .title {
-      font-weight: 500;
-      font-size: 1rem;
-      padding-bottom: 10px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding-bottom: 5px;
+      color: #1D1617;
+      margin-top: 5px;
     }
 
     p {
@@ -131,12 +133,11 @@ gap: 3.5px;
 `
 
 export const Divider = styled.div`
-  width: 28%;
+  width: 90%;
   margin-left: 20px;
   margin-top: 10px;
   height: 0px;
   z-index: 99999;
-  position: absolute;
   border: 1px solid transparent;
   background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%) padding-box, linear-gradient(274.42deg, #C58BF2 0%, #9DCEFF 124.45%) border-box;
 `

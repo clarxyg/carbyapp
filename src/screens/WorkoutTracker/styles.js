@@ -51,10 +51,8 @@ export const Container = styled.div`
 
 
 export const Header = styled.div`
-
-
   width: 310px;
-  margin-top: 2rem;
+  margin-top: 3rem;
 
 
 `

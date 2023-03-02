@@ -14,7 +14,7 @@ export function Item() {
   return (
     <Container>
       <div className='imageContainer'>
-        <TopBar goBack />
+        <TopBar goBack to="/menu"/>
         <img src={pizza} />
       </div>
       <ContainerCard>

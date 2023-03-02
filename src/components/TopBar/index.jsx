@@ -51,14 +51,14 @@ function MenuTab() {
 }
 
 
-export function TopBar({ showMenu, goBack }) {
+export function TopBar({ showMenu, goBack, to }) {
   return (
     <Container>
       {
         goBack ?
 
           <button style={{ padding: '8px', marginLeft: '-20px', marginTop: '-20px' }}>
-            <Link to="/menu">
+            <Link to={to}>
               <CaretLeft size={22} />
             </Link>
           </button>
