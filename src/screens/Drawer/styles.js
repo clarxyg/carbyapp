@@ -22,6 +22,10 @@ export const Container = styled.div`
     margin-top: 1rem;;
     z-index: 99999;
 
+    @media (max-width: 400px) {
+      margin-left: 35px;
+    }
+
 
     .row {
       display: flex;
@@ -41,6 +45,11 @@ export const Container = styled.div`
     z-index: 99999;
     color: #fff;
 
+    @media (max-width: 400px) {
+      justify-content: center;
+      margin-left: 0;
+    }
+
     p {
       color: #333;
       cursor: pointer;
@@ -56,6 +65,15 @@ export const Container = styled.div`
     gap: 0.7rem;
     margin-top: 20px;
     z-index: 99999;
+
+    @media (max-width: 400px) {
+      padding: 40px;
+      margin-left: 0;
+
+      .title {
+        margin-left: 20px;
+      }
+    }
 
     .title {
       font-weight: 600;
@@ -140,6 +158,11 @@ export const Divider = styled.div`
   z-index: 99999;
   border: 1px solid transparent;
   background: linear-gradient(274.42deg, #C58BF2 0%, #EEA4CE 124.45%) padding-box, linear-gradient(274.42deg, #C58BF2 0%, #9DCEFF 124.45%) border-box;
+
+  @media (max-width: 400px) {
+    width: 75%;
+    margin-left: 55px;
+  }
 `
 
 export const Filter = styled.div`

@@ -11,6 +11,14 @@ export const Container = styled.div`
   padding: 20px;
 
 
+  @media (max-width: 400px) {
+      align-items: center;
+
+      span {
+        font-size: 0.5rem !important;
+      }
+    }
+
   span {
     color: #333;
     text-align: center;
@@ -22,6 +30,10 @@ export const Container = styled.div`
     display: flex;
     gap: 1rem;
     width: 100%;
+
+    @media (max-width: 400px) {
+      width: unset;
+    }
   }
 
   .column {

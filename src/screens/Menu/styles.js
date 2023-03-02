@@ -19,6 +19,12 @@ export const Container = styled.div`
     position: relative;
     z-index: 0;
 
+    @media (max-width: 400px) {
+      padding: 55px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+
     .row {
       display: flex;
       gap: 0.2rem;
@@ -32,6 +38,10 @@ export const Container = styled.div`
     place-items: center;
     place-content: center;
     gap: 1rem;
+
+    @media (max-width: 400px) {
+      grid-template-columns: 170px 170px;
+    }
 
     a {
       color: #000;
@@ -47,6 +57,11 @@ export const Header = styled.header`
   justify-content: space-between;
   padding: 30px;
   padding-bottom: 0;
+
+  @media (max-width: 400px) {
+    padding: 55px;
+    padding-bottom: 0;
+  }
 
   h1 {
     font-size: 1.2rem;
@@ -86,6 +101,18 @@ export const Card = styled.div`
     border-radius: 9px;
     width: fit-content;
     cursor: pointer;
+
+    @media (max-width: 400px) {
+
+      .imageCard {
+         width: 120px !important;
+
+         img {
+          width: 120px !important;
+         }
+      }
+    }
+
   .imageCard {
     background: #9DCEFF;
     border-radius: 9px 9px 0px 0px;

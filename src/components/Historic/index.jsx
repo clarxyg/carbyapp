@@ -3,6 +3,7 @@ import food01 from '../../assets/food01.svg'
 import food02 from '../../assets/food02.svg'
 import food10 from '../../assets/food10.svg'
 import { CaretCircleRight } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 
 const historicData = [
@@ -38,7 +39,9 @@ export function Historic() {
                 <span>{item.name}</span>
                 <div className="descriptioncontainer">
                   <span className="description">{item.description}</span>
-                  <CaretCircleRight size={36} color="#C58BF2" />
+                  <Link to="/meal">
+                    <CaretCircleRight size={36} color="#C58BF2" />
+                  </Link>
                 </div>
               </div>
             </div>

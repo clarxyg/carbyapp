@@ -5,6 +5,10 @@ import { MagnifyingGlass, SlidersHorizontal } from "phosphor-react";
 
 const Container = styled.div`
   width: 400px;
+
+  @media (max-width: 400px) {
+    width: 350px;
+  }
 .form {
     background: #FFFFFF;
     box-shadow: 0px 10px 40px rgba(29, 22, 23, 0.07);

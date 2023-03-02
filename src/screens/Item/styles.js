@@ -34,6 +34,13 @@ export const ContainerCard = styled.div`
     padding-top: 0;
     align-items: center;
 
+
+    @media (max-width: 400px) {
+      padding: 55px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
     .column {
       display: flex;
       flex-direction: column;
@@ -64,6 +71,12 @@ export const MenuList = styled.div`
   padding: 30px;
   padding-top: 0px;
 
+  @media (max-width: 400px) {
+      padding: 55px;
+      padding-top: 0px;
+      padding-bottom: 30px;
+    }
+
   h3 {
     display: flex;
     align-items: center;
@@ -85,6 +98,12 @@ export const CardGraphics = styled.div`
    padding: 30px;
    padding-top: 0;
 
+   @media (max-width: 400px) {
+      padding: 50px;
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
+
    .chartContainer {
      border: 2px solid #DDDADA;
      border-radius: 15px;
@@ -100,6 +119,11 @@ export const CardGraphics = styled.div`
       gap: 1rem;
       padding: 20px;
       padding-top: 0;
+
+      @media (max-width: 400px) {
+      padding: 10px;
+      padding-top: 0px;
+    }
 
       .chart {
         width: 100%;
@@ -126,6 +150,12 @@ export const Comments = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+
+  @media (max-width: 400px) {
+     padding: 55px;
+     padding-top: 0px;
+     padding-bottom: 30px;
+    }
 
  h3 {
   display: flex;
