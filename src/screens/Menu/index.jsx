@@ -1,27 +1,28 @@
 import { FormControl, InputAdornment, OutlinedInput } from "@mui/material";
-import { GitMerge, Heart, List, MagnifyingGlass, Plus } from "phosphor-react";
+import { ArrowLeft, CaretLeft, GitMerge, Heart, List, MagnifyingGlass, Plus } from "phosphor-react";
 import { Button, Container, Header, Card } from "./styles";
 import pizza from '../../assets/pizza.png'
 import { Link } from "react-router-dom";
 import BottomTabs from '../../components/BottomTabs'
 import { Search } from "../../components/Inputs/Search";
+import MealMenu from "../../components/MealMenu";
 
 
 export function Menu() {
   return (
     <Container>
       <Header>
-        <div className="drawer">
-          <div className="titleAndHour">
-            <h1>Almoço</h1>
-            <span>12:00</span>
-          </div>
-          <Link to="/drawer">
-            <List size={20} />
-          </Link>
-        </div>
-        <Search />
+        <Link to="/drawer">
+          <button>
+              <CaretLeft size={22} />
+          </button>
+        </Link>
+        <h1>Almoço</h1>
+        <MealMenu />
       </Header>
+      <div className="containerSearch">
+        <Search />
+      </div>
       <div className="containerButton">
         <div className="row">
           <Button>

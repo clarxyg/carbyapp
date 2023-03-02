@@ -1,5 +1,5 @@
 import { Button, Menu, MenuItem } from "@mui/material";
-import { ArrowArcRight, ArrowLeft, DotsThree, X } from "phosphor-react";
+import { ArrowArcRight, ArrowLeft, CaretLeft, DotsThree, X } from "phosphor-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Container } from "./styles";
@@ -56,9 +56,10 @@ export function TopBar({ showMenu, goBack }) {
     <Container>
       {
         goBack ?
+
           <button style={{ padding: '8px', marginLeft: '-20px', marginTop: '-20px' }}>
             <Link to="/menu">
-              <ArrowLeft size={20} />
+              <CaretLeft size={22} />
             </Link>
           </button>
           :

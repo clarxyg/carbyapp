@@ -20,7 +20,7 @@ export function IconsList() {
           <img src={food01} />
           <span>Japonesa</span>
         </div>
-        <div className='column'>
+        <div className='column variant'>
           <img src={food02} />
           <span>Carne</span>
         </div>
@@ -28,7 +28,7 @@ export function IconsList() {
           <img src={food03} />
           <span>Massa</span>
         </div>
-        <div className='column'>
+        <div className='column variant'>
           <img src={food04} />
           <span>Peixe</span>
         </div>
@@ -38,7 +38,7 @@ export function IconsList() {
         </div>
       </div>
       <div className='row'>
-        <div className='column'>
+        <div className='column variant'>
           <img src={food06} />
           <span>Sobremesa</span>
         </div>
@@ -46,7 +46,7 @@ export function IconsList() {
           <img src={food07} />
           <span>Frutas</span>
         </div>
-        <div className='column'>
+        <div className='column variant'>
           <img src={food08} />
           <span>Pizza</span>
         </div>
@@ -54,7 +54,7 @@ export function IconsList() {
           <img src={food09} />
           <span>Delivery</span>
         </div>
-        <div className='column'>
+        <div className='column variant'>
           <img src={food10} />
           <span>Salada</span>
         </div>

@@ -1,8 +1,10 @@
 import { FormControl, InputAdornment, OutlinedInput } from "@mui/material";
-import { GitMerge, Heart, Lightning, MagnifyingGlass, X, Clock } from "phosphor-react";
+import { GitMerge, Heart, Lightning, MagnifyingGlass, X, Clock, CaretLeft } from "phosphor-react";
 import { Link } from "react-router-dom";
 import { IconsList } from "../../components/IconsList";
 import { Search } from "../../components/Inputs/Search";
+import MealMenu from "../../components/MealMenu";
+import { Header } from "../Menu/styles";
 import { Button, Container, Divider, Filter } from "./styles";
 
 
@@ -10,16 +12,15 @@ import { Button, Container, Divider, Filter } from "./styles";
 export function Drawer() {
   return (
     <Container>
-      <Filter />
-      <div className="drawer">
-        <div className="titleAndHour">
-          <h1>Almoço</h1>
-          <span>12:00</span>
-        </div>
+      <Header>
         <Link to="/menu">
-          <X size={22} color="#000" />
+          <button>
+            <CaretLeft size={22} />
+          </button>
         </Link>
-      </div>
+        <h1>Almoço</h1>
+        <MealMenu />
+      </Header>
       <div className="containerButton">
         <Button>
           <Heart size={12} weight="fill" />
@@ -38,11 +39,10 @@ export function Drawer() {
       <Divider />
       <div className="containerForm">
         <Search />
-        <p>Cancelar</p>
       </div>
       <div className="containerSearchItems">
-        <p className="title">Buscas recentes</p>
-        <p>
+        <p className="title">Histórico</p>
+        {/* <p>
           <Clock size={16} weight="fill" color="#B4C0FE" />
           Tilápia
         </p>
@@ -53,7 +53,8 @@ export function Drawer() {
         <p>
           <Clock size={16} weight="fill" color="#B4C0FE" />
           Churraco
-        </p>
+        </p> */}
+
       </div>
       {/* <div className="elipse"/> */}
     </Container>

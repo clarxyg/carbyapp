@@ -14,7 +14,8 @@ export const Container = styled.div`
   span {
     color: #333;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    padding-bottom: 5px;
   }
 
   .row {
@@ -29,16 +30,22 @@ export const Container = styled.div`
     gap: 5px;
     width: 100%;
     align-items: center;
-    z-index: 99999;
+    background: #f0f8ff;
+    border-radius: 16px;
+
+    &:hover {
+      transform: scale(1.1);
+     }
 
     img {
      width: 45px !important;
      object-fit: cover;
      cursor: pointer;
+     padding: 5px;
 
-     &:hover {
-      transform: scale(1.1);
-     }
     }
+  }
+  .column.variant {
+    background: #fff0f9 !important;
   }
 `

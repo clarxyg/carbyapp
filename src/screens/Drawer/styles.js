@@ -19,7 +19,7 @@ export const Container = styled.div`
     display: flex;
     gap: 0.2rem;
     padding: 20px;
-    padding-top: 5px;
+    margin-top: 1rem;;
     z-index: 99999;
 
 
@@ -36,7 +36,7 @@ export const Container = styled.div`
     display: flex;
     gap: 1rem;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-left: 20px;
     z-index: 99999;
     color: #fff;

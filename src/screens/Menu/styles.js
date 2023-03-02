@@ -4,11 +4,20 @@ export const Container = styled.div`
     width: 450px;
     height: 100vh;
 
+    .containerSearch {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      width: 100%;
+    }
+
    .containerButton {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     margin-top: 1rem;
+    position: relative;
+    z-index: 0;
 
     .row {
       display: flex;
@@ -35,57 +44,23 @@ export const Header = styled.header`
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 30px;
+  padding-bottom: 0;
+
+  h1 {
+    font-size: 1.2rem;
+  }
 
   svg {
     cursor: pointer;
   }
 
-  .titleAndHour {
-    display: flex;
-    flex-direction: column;
-
-    h1, span {
-      margin: 0;
-    }
-
-    h1 {
-      margin-top: 20px;
-    }
-
-    span {
-      font-size: 0.8rem;
-      color: #92A3FD;
-    }
-  }
-
-  .drawer {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    a {
-      display: flex;
-      align-items: center;
-      color: #000;
-    }
-
-    h1 {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-  }
-
-  .form {
-    box-shadow: 0px 10px 40px 0px #1D161712;
-    border-radius: 15px;
-    background-color: #f1f2f3;
-    width: 200px;
-    height: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
+  button {
+    background: #F7F8F8;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
   }
 `
 
