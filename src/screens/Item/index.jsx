@@ -14,7 +14,7 @@ export function Item() {
   return (
     <Container>
       <div className='imageContainer'>
-        <TopBar goBack to="/menu"/>
+        <TopBar goBack to="/menu" />
         <img src={pizza} />
       </div>
       <ContainerCard>
@@ -101,7 +101,7 @@ export function Item() {
         </CardGraphics>
         <Comments>
           <h3>
-            Comentários
+            12 Comentários
             <ChatCircleDots size={24} />
           </h3>
           <div className='comment'>
@@ -113,6 +113,10 @@ export function Item() {
               Fiz com carne vegetal e não ficou bom.
               Melhor pedir pelo iFood - <span>24 de janeiro</span>
             </p>
+            <span className='like'>
+              <ThumbsUp size={18} weight="fill" color="#6495ED" />
+              17
+            </span>
           </div>
           <div className='comment'>
             <span className='avatarContainer'>
@@ -123,6 +127,10 @@ export function Item() {
               Fiz com carne vegetal e não ficou bom.
               Melhor pedir pelo iFood - <span>24 de janeiro</span>
             </p>
+            <span className='like'>
+              <ThumbsUp size={18} weight="fill" color="#6495ED" />
+              22
+            </span>
           </div>
           <div className='comment'>
             <span className='avatarContainer'>
@@ -133,7 +141,12 @@ export function Item() {
               Fiz com carne vegetal e não ficou bom.
               Melhor pedir pelo iFood - <span>24 de janeiro</span>
             </p>
+            <span className='like'>
+              <ThumbsUp size={18} weight="fill" color="#6495ED" />
+              30
+            </span>
           </div>
+          <p className='seeMore'>Ver mais</p>
           <div className="containerForm">
             <FormControl variant="outlined" className="form">
               <OutlinedInput
@@ -146,7 +159,7 @@ export function Item() {
               />
             </FormControl>
             <button>
-              <PaperPlaneTilt size={17} weight="fill" color="#fff"/>
+              <PaperPlaneTilt size={17} weight="fill" color="#fff" />
               Enviar
             </button>
           </div>

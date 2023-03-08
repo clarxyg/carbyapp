@@ -6,6 +6,27 @@ export const Container = styled.div`
   width: 450px;
   border-radius: 30px;
 
+  .css-1f2xuhi-MuiDrawer-docked .MuiDrawer-paper{
+      width: 450px !important;
+    }
+
+  .appBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .drawer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+
+    .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+      left: unset;
+    }
+  }
+
   /* .elipse {
     clip-path: circle(50% at 50% 50%);
     width: 50px;

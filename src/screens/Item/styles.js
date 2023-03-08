@@ -149,7 +149,29 @@ export const Comments = styled.div`
   padding-top: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.5rem;
+
+
+  .seeMore {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #68696A;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  .like {
+    display: flex;
+    gap: 5px;
+    font-size: 0.8rem;
+    margin-top: 40px;
+    float: right;
+
+    svg {
+      cursor: pointer;
+    }
+  }
 
   @media (max-width: 400px) {
      padding: 55px;
@@ -168,6 +190,10 @@ export const Comments = styled.div`
   align-items: center;
   gap: 15px;
   width: 350px;
+  background-color: #fff;
+  box-shadow: 0px 10px 40px 0px #1D242A0D;
+  padding: 15px;
+  border-radius: 16px;
 
   p {
     font-size: 0.8rem;
