@@ -31,7 +31,7 @@ const AppBar = styled(MuiAppBar, {
 
 
 export function Menu() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -57,7 +57,6 @@ export function Menu() {
         open ?
           <PersistentDrawerLeft
             handleDrawerClose={handleDrawerClose}
-            className="drawer"
           /> :
           <>
             <div className="containerSearch">

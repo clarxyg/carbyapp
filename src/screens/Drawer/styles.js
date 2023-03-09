@@ -16,6 +16,19 @@ export const Container = styled.div`
     }
 }
 
+.setDrawerEffectWhenClose {
+  animation: close 4s !important;
+
+  @keyframes close {
+    0% {
+        transform: translateX(0) !important;
+    }
+    100% {
+        transform: translateX(100) !important;
+    }
+}
+}
+
   .css-1f2xuhi-MuiDrawer-docked .MuiDrawer-paper{
       width: 450px !important;
     }

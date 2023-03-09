@@ -5,6 +5,7 @@ import { Item } from "../screens/Item";
 import { Menu } from "../screens/Menu";
 import { WorkoutTracker } from "../screens/WorkoutTracker";
 import { Meal } from "../screens/Meal";
+import { ShoppingList } from "../screens/ShoppingList";
 
 
 
@@ -18,6 +19,7 @@ export const Navigation = () => {
       <Route path="/menu" element={<Menu />} />
       <Route path="/item" element={<Item />} />
       <Route path="/meal" element={<Meal />} />
+      <Route path="/shoppinglist" element={<ShoppingList />} />
     </Routes>
   )
 }

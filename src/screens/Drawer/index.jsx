@@ -11,11 +11,9 @@ import { Search } from "../../components/Inputs/Search";
 import MealMenu from "../../components/MealMenu";
 
 export default function PersistentDrawerLeft({ handleDrawerClose }) {
-  const theme = useTheme();
-  const [open, setOpen] = useState(false);
 
   return (
-    <Container>
+    <Container className={handleDrawerClose === true && 'setDrawerEffectWhenClose'}>
       <Header>
         <button onClick={handleDrawerClose}>
           <CaretLeft size={22} />
