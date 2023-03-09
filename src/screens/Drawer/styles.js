@@ -5,6 +5,16 @@ export const Container = styled.div`
   height: 100vh;
   width: 450px;
   border-radius: 30px;
+  animation: go-back 1.7s;
+
+  @keyframes go-back {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(-0);
+    }
+}
 
   .css-1f2xuhi-MuiDrawer-docked .MuiDrawer-paper{
       width: 450px !important;

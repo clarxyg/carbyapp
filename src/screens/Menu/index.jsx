@@ -36,32 +36,29 @@ export function Menu() {
   const handleDrawerOpen = () => {
     setOpen(true);
   };
+
+  const handleDrawerClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Container>
-      <Header>
-        <button>
-          <AppBar position="fixed" open={open} className="appBar">
-            <Toolbar>
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                onClick={handleDrawerOpen}
-                edge="start"
-                sx={{ mr: 2, ...(open && { display: 'none' }) }}
-              >
-                <CaretLeft size={22} />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-          <h1>Almoço</h1>
-          <MealMenu />
-        </button>
-      </Header>
+      {
+        !open ?
+          <Header>
+            <AppBar open={open} className="appBar" position="inherit">
+              <CaretLeft size={22} onClick={handleDrawerOpen} />
+            </AppBar>
+            <h1>Almoço</h1>
+            <MealMenu />
+          </Header> : ''
+      }
       {
         open ?
           <PersistentDrawerLeft
-
-            open={open} /> :
+            handleDrawerClose={handleDrawerClose}
+            className="drawer"
+          /> :
           <>
             <div className="containerSearch">
               <Search />

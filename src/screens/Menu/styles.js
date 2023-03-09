@@ -71,11 +71,16 @@ export const Header = styled.header`
     cursor: pointer;
   }
 
-  button {
+  button, .appBar {
     background: #F7F8F8;
     border-radius: 8px;
     border: none;
     padding: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    box-shadow: none;
   }
 `
 
