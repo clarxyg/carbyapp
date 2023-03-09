@@ -128,7 +128,7 @@ export const Container = styled.div`
   .drawer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
     padding: 30px;
     z-index: 99999;
 
