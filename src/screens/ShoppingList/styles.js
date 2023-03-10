@@ -26,4 +26,10 @@ export const Container = styled.div`
     gap: 8px;
   }
   }
+
+  .loadingMore {
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
 `

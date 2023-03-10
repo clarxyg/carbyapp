@@ -19,6 +19,9 @@ export function ShoppingList() {
       <div className='cart'>
         <CartItem />
       </div>
+      <div className='loadingMore'>
+        <span>Carregar mais</span>
+      </div>
       <BottomTabs />
     </Container>
   )
