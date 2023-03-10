@@ -2,14 +2,28 @@ import styled from "@emotion/styled";
 
 
 export const Container = styled.div`
-  width: 420px;
+  width: 450px;
   height: 100vh;
-  padding: 30px;
 
-  h1 {
-   font-size: 1.2rem;
-   display: flex;
-   align-items: center;
-   gap: 8px;
+  .cart {
+    margin-left: 30px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    a {
+      color: #000;
+    }
+
+    h1 {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   }
 `
