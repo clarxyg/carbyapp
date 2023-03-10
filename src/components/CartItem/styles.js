@@ -33,7 +33,7 @@ export const Card = styled.div`
       display: flex;
 
       span {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
       }
     }
 
@@ -48,7 +48,7 @@ export const Card = styled.div`
       background: #F7F8F8;
       border: none;
       border-radius: 8px;
-      padding: 5px;
+      padding: 7px;
       display: flex;
       align-items: center;
     }

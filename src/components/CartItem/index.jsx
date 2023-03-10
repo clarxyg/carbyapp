@@ -57,11 +57,11 @@ export function CartItem() {
                   {item.name}
                   <div className="counter">
                     <button onClick={decrementCount}>
-                      <Minus size={10} />
+                      <Minus size={13} />
                     </button>
                     <span>{count}</span>
                     <button onClick={incrementCount}>
-                      <Plus size={10} />
+                      <Plus size={13} />
                     </button>
                   </div>
                 </p>
