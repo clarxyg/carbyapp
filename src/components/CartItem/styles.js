@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
 `
 
 export const Card = styled.div`
@@ -15,32 +15,30 @@ export const Card = styled.div`
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding-right: 5px !important;
+    padding: 0;
     width: 370px;
     justify-content: space-around;
     gap: 1rem;
 
-    .title {
-      font-size: 0.8rem;
-      word-break: break-word;
-      font-weight: 500;
-      display: flex;
-      align-items: flex-start;
-
+    @media (max-width: 400px) {
+      width: 330px;
+      margin-left: 30px;
     }
 
-    .textAndCounter {
-      display: flex;
-
-      span {
-        font-size: 0.8rem;
-      }
+    .title {
+      font-size: 0.75rem;
+      word-break: break-word;
+      font-weight: 500;
+      width: 100%;
     }
 
     .counter {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 9px;
+      width: 50%;
+      margin-right: 10px;
     }
 
     button {
@@ -48,7 +46,7 @@ export const Card = styled.div`
       background: #F7F8F8;
       border: none;
       border-radius: 8px;
-      padding: 7px;
+      padding: 8px;
       display: flex;
       align-items: center;
     }
@@ -57,14 +55,16 @@ export const Card = styled.div`
       width: 60px;
       object-fit: cover;
       height: 80px;
-      border-radius: 6px;
+      border-radius: 16px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     .text {
       display: flex;
       align-items: center;
-      flex-direction: column;
-      gap: 4px;
+      gap: 8px;
+      width: 100%;
 
 
       p {

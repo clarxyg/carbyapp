@@ -3,6 +3,7 @@ import { CartItem } from '../../components/CartItem'
 import { Container } from './styles'
 import BottomTabs from '../../components/BottomTabs'
 import { Link } from 'react-router-dom'
+import { SlideButton } from '../../components/SlideButton'
 
 export function ShoppingList() {
   return (
@@ -12,10 +13,8 @@ export function ShoppingList() {
           <ShoppingCart size={20} />
           Lista de compras
         </h1>
-        <Link to="/shoppingchecklist">
-          Continuar
-        </Link>
       </div>
+      <SlideButton textFirst="Cardápio" textSecond="Ingredientes" toSecond="/shoppingchecklist"/>
       <div className='cart'>
         <CartItem />
       </div>

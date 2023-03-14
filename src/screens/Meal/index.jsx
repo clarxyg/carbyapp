@@ -1,16 +1,17 @@
-import { Container, ContainerCard, CardButton, Workout, Filter } from './styles'
-import pizza from '../../assets/pizza.png'
+import { Container, ContainerCard, Workout, Filter } from './styles'
+import food01 from '../../assets/1.webp'
 import { TopBar } from '../../components/TopBar'
 import { Button } from '../../components/Button'
 import SwitchToggle from '../../components/Switch'
 import workout from '../../assets/workout1.svg'
+import { SlideButton } from '../../components/SlideButton'
 
 export function Meal() {
   return (
     <Container>
       <div className='imageContainer'>
         <TopBar goBack to="/menu"/>
-        <img src={pizza} />
+        <img src={food01} />
       </div>
       <ContainerCard>
         <div className='header'>
@@ -30,16 +31,7 @@ export function Meal() {
             <span> Read more..</span>
           </p>
         </div>
-        <CardButton>
-           <div className='card'>
-             <button className='enabled'>
-               Foto
-             </button>
-             <button className='disabled'>
-               Estatística
-             </button>
-           </div>
-        </CardButton>
+        <SlideButton textFirst="Foto" textSecond="Estático"/>
         <Workout>
           <div className='card'>
             <Filter />

@@ -9,16 +9,9 @@ export const Container = styled.div`
   flex-direction: column;
 
   .imageContainer {
-    background: #9DCEFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-
     img {
       width: 100%;
+      margin-top: -27px;
     }
 
     @media (max-width: 400px) {
@@ -33,7 +26,7 @@ export const ContainerCard = styled.div`
    background-color: #fff;
    border-top-left-radius: 30px;
    border-top-right-radius: 30px;
-   margin-top: -30px;
+   margin-top: -25px;
 
   .header {
     display: flex;
@@ -106,50 +99,6 @@ export const ContainerCard = styled.div`
 
     span {
       color: #92A3FD;
-    }
-  }
-`
-
-export const CardButton = styled.div`
-  padding: 30px;
-  padding-top: 0;
-
-  @media (max-width: 400px) {
-      padding: 55px;
-      padding-bottom: 30px;
-      padding-top: 0;
-    }
-
-  .card {
-    background: #F7F8F8;
-    border-radius: 99px;
-    padding: 12px;
-
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-
-
-    button {
-      border-radius: 50px;
-      text-transform: none;
-      font-size: 1.2rem;
-      width: 175px;
-      padding: 15px;
-      border: none;
-      font-weight: 400;
-      cursor: pointer;
-    }
-
-    .enabled {
-      background: linear-gradient(274.42deg, #92A3FD 0%, #9DCEFF 124.45%);
-      color: #fff;
-    }
-
-    .disabled {
-      background: transparent !important;
-      color: #ADA4A5;
     }
   }
 `

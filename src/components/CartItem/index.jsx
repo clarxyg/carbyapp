@@ -47,30 +47,58 @@ export function CartItem() {
 
   return (
     <Container>
-      {
-        Items.map((item) =>
-          <Card key={item.id}>
-            <img src={item.image} alt={item.name} />
-            <div className="text">
-              <div className="textAndCounter">
+      <div>
+        <h2>
+          Almoço
+        </h2>
+        {
+          Items.map((item) =>
+            <Card key={item.id}>
+              <img src={item.image} alt={item.name} />
+              <div className="text">
                 <p className='title'>
                   {item.name}
-                  <div className="counter">
-                    <button onClick={decrementCount}>
-                      <Minus size={13} />
-                    </button>
-                    <span>{count}</span>
-                    <button onClick={incrementCount}>
-                      <Plus size={13} />
-                    </button>
-                  </div>
                 </p>
+                <div className="counter">
+                  <button onClick={decrementCount}>
+                    <Minus size={13} />
+                  </button>
+                  <span>{count}</span>
+                  <button onClick={incrementCount}>
+                    <Plus size={13} />
+                  </button>
+                </div>
               </div>
-              <p className="description">{item.description}</p>
-            </div>
-          </Card>
-        )
-      }
+            </Card>
+          )
+        }
+      </div>
+      <div>
+        <h2>
+          Janta
+        </h2>
+        {
+          Items.map((item) =>
+            <Card key={item.id}>
+              <img src={item.image} alt={item.name} />
+              <div className="text">
+                <p className='title'>
+                  {item.name}
+                </p>
+                <div className="counter">
+                  <button onClick={decrementCount}>
+                    <Minus size={13} />
+                  </button>
+                  <span>{count}</span>
+                  <button onClick={incrementCount}>
+                    <Plus size={13} />
+                  </button>
+                </div>
+              </div>
+            </Card>
+          )
+        }
+      </div>
     </Container>
   )
 }

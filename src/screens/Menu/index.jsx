@@ -1,12 +1,12 @@
 import { CaretLeft, GitMerge, Heart, List, MagnifyingGlass, Plus } from "phosphor-react";
 import { Button, Container, Header, Card } from "./styles";
-import pizza from '../../assets/pizza.png'
+import food01 from '../../assets/3.webp'
 import { Link } from "react-router-dom";
 import BottomTabs from '../../components/BottomTabs'
 import { Search } from "../../components/Inputs/Search";
 import MealMenu from "../../components/MealMenu";
 import { AppBar as MuiAppBar, IconButton, Toolbar } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import PersistentDrawerLeft from "../Drawer";
 import { styled, useTheme } from '@mui/material/styles';
 
@@ -32,6 +32,24 @@ const AppBar = styled(MuiAppBar, {
 
 export function Menu() {
   const [open, setOpen] = useState(false)
+  const [text, setText] = useState("");
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = textRef.current.offsetWidth;
+      const maxWidth = 165;
+      const truncatedText = textRef.current.textContent.slice(0, -1) + "..";
+      setText(width > maxWidth ? truncatedText : textRef.current.textContent);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -82,10 +100,10 @@ export function Menu() {
               <Link to="/item">
                 <Card>
                   <div className="imageCard">
-                    <img src={pizza} alt="pizza" />
+                    <img src={food01} alt="pizza" />
                   </div>
                   <div className="description">
-                    <h1>Pizza do Zé</h1>
+                    <h1 ref={textRef}>{text || 'Pizza do Zé'}</h1>
                     <p>380 kcal</p>
                   </div>
                 </Card>
@@ -93,10 +111,10 @@ export function Menu() {
               <Link to="/item">
                 <Card>
                   <div className="imageCard">
-                    <img src={pizza} alt="pizza" />
+                    <img src={food01} alt="pizza" />
                   </div>
                   <div className="description">
-                    <h1>Pizza do Zé</h1>
+                    <h1 ref={textRef}>{text || 'Pizza do Zé fdfdfdfdfdsf'}</h1>
                     <p>380 kcal</p>
                   </div>
                 </Card>
@@ -104,10 +122,10 @@ export function Menu() {
               <Link to="/item">
                 <Card>
                   <div className="imageCard">
-                    <img src={pizza} alt="pizza" />
+                    <img src={food01} alt="pizza" />
                   </div>
                   <div className="description">
-                    <h1>Pizza do Zé</h1>
+                    <h1 ref={textRef}>{text || 'Pizza do Zé hdfuwhfudhfuhs'}</h1>
                     <p>380 kcal</p>
                   </div>
                 </Card>
@@ -115,10 +133,10 @@ export function Menu() {
               <Link to="/item">
                 <Card>
                   <div className="imageCard">
-                    <img src={pizza} alt="pizza" />
+                    <img src={food01} alt="pizza" />
                   </div>
                   <div className="description">
-                    <h1>Pizza do Zé</h1>
+                    <h1 ref={textRef}>{text || 'Pizza do Zé'}</h1>
                     <p>380 kcal</p>
                   </div>
                 </Card>

@@ -1,5 +1,5 @@
 import { Container, ContainerCard, MenuList, CardGraphics, Comments } from './styles'
-import pizza from '../../assets/pizza.png'
+import food01 from '../../assets/3.webp'
 import { TopBar } from '../../components/TopBar'
 import { ChatCircleDots, Clock, Heart, PaperPlaneTilt, ThumbsUp } from 'phosphor-react'
 import entry from '../../icons/entry.svg'
@@ -14,8 +14,8 @@ export function Item() {
   return (
     <Container>
       <div className='imageContainer'>
-        <TopBar goBack to="/menu" />
-        <img src={pizza} />
+        <TopBar goBack to="/menu"/>
+        <img src={food01} />
       </div>
       <ContainerCard>
         <div className='header'>

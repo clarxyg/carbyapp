@@ -57,7 +57,7 @@ export function TopBar({ showMenu, goBack, to }) {
       {
         goBack ?
 
-          <button style={{ padding: '8px', marginLeft: '-20px', marginTop: '-20px' }}>
+          <button style={{ padding: '8px', marginLeft: '30px', marginTop: '60px', position: 'absolute' }}>
             <Link to={to}>
               <CaretLeft size={22} />
             </Link>

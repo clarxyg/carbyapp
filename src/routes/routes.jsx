@@ -20,8 +20,8 @@ export const Navigation = () => {
       <Route path="/menu" element={<Menu />} />
       <Route path="/item" element={<Item />} />
       <Route path="/meal" element={<Meal />} />
-      <Route path="/shoppinglist" element={<ShoppingList />} />
       <Route path="/shoppingchecklist" element={<ShoppingChecklist />} />
+      <Route path="/shoppinglist" element={<ShoppingList />} />
     </Routes>
   )
 }

@@ -7,16 +7,18 @@ export const Container = styled.div`
   flex-direction: column;
 
   .imageContainer {
-    background: #9DCEFF;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    margin-top: -25px;
     display: flex;
     flex-direction: column;
 
     img {
       width: 100%;
+      max-height: 370px;
+      object-fit: cover;
     }
   }
 `
@@ -25,7 +27,7 @@ export const ContainerCard = styled.div`
    background-color: #fff;
    border-top-left-radius: 30px;
    border-top-right-radius: 30px;
-   margin-top: -30px;
+   margin-top: -25px;
 
   .header {
     display: flex;

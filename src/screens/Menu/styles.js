@@ -41,6 +41,7 @@ export const Container = styled.div`
 
     @media (max-width: 400px) {
       grid-template-columns: 170px 170px;
+      column-gap: 10px;
     }
 
     a {
@@ -110,24 +111,27 @@ export const Card = styled.div`
     @media (max-width: 400px) {
 
       .imageCard {
-         width: 120px !important;
+         width: 160px !important;
 
          img {
-          width: 120px !important;
+          width: 160px !important;
          }
       }
     }
 
-  .imageCard {
-    background: #9DCEFF;
-    border-radius: 9px 9px 0px 0px;
-    width: fit-content;
-    padding: 22px;
-    img {
-      width: 150px;
-    }
+    .imageCard {
 
-  }
+      border-radius: 9px 9px 0px 0px;
+      width: fit-content;
+
+      img {
+        width: 190px;
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 9px 9px 0px 0px;
+      }
+
+}
 
   &:hover {
     filter: brightness(1.04);
@@ -139,6 +143,10 @@ export const Card = styled.div`
         font-size: 0.95rem;
         font-weight: 500;
         margin: 0;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       p {
