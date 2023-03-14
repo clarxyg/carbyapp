@@ -29,4 +29,15 @@ export const Container = styled.div`
     }
   }
 
+  .goBack {
+    padding: 8px;
+    margin-left: 30px;
+    margin-top: 60px;
+    position: absolute;
+
+    @media (max-width: 400px) {
+      left: 0;
+    }
+  }
+
 `
